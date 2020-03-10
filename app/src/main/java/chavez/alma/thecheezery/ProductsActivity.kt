@@ -28,19 +28,19 @@ class ProductsActivity : AppCompatActivity() {
             when(type){
                 "coldDrinks" -> {
                     cargarColdDrinks()
-                    main_image = R.drawable.cold_drinks
+                    title_products.setImageResource( R.drawable.cold_drinks)
                 }
                 "hotDrinks" -> {
                     cargarHotDrinks()
-                    main_image = R.drawable.hot_drinks
+                    title_products.setImageResource( R.drawable.hot_drinks)
                 }
                 "sweets" -> {
                     cargarSweets()
-                    main_image = R.drawable.sweets
+                    title_products.setImageResource( R.drawable.sweets)
                 }
                 "salties" -> {
                     cargarSalties()
-                    main_image = R.drawable.salties
+                    title_products.setImageResource( R.drawable.salties)
                 }
             }
         }
@@ -112,7 +112,7 @@ class ProductsActivity : AppCompatActivity() {
             vista.product_description.setText(produ.description)
             vista.product_image.setImageResource(produ.image)
             vista.product_price.setText("$${produ.price}")
-            //vista.title_products.setImageResource(R.drawable.salties)
+
 
             return vista
         }
